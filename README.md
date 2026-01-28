@@ -48,11 +48,41 @@ The system is designed to work offline and can be deployed on edge devices.
 - Arduino Nano 33 BLE Sense  
 - Edge Impulse  
 - pyttsx3 (Text-to-Speech)  
-- NumPy  
+- NumPy
+- Edge Impulse (model training & embedded inference SDK)
+
 
 > MediaPipe is **not used** in this project.
 
 ---
 
 ## Repository Structure
+
+SIGN2SOUND_N^3_Collectives/
+│
+├── README.md            # Main documentation
+├── requirements.txt     # Project dependencies
+├── LICENSE              # Apache 2.0 License
+├── .gitignore           # Ignored files
+│
+├── data/                # Dataset and statistics
+├── preprocessing/       # Data preprocessing scripts
+├── features/            # Feature extraction modules
+├── models/              # Model architecture
+├── training/            # Training pipeline
+├── inference/           # Inference and text-to-speech
+├── notebooks/           # Experiments and analysis
+├── results/             # Metrics and visualizations
+└── checkpoints/         # Trained model weights
+
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/SIGN2SOUND_N^2-Collectives.git
+cd SIGN2SOUND_N^2_Collectives
+
+
+
 
