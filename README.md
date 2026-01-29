@@ -55,59 +55,57 @@ The system is designed to work offline and can be deployed on edge devices.
 > MediaPipe is **not used** in this project.
 
 ---
-## Repository Structure
-
 SIGN2SOUND_N3_Collectives/
-├── README.md              # Main documentation
-├── requirements.txt       # Python dependencies
-├── LICENSE                # Apache 2.0 License
-├── .gitignore             # Ignored files
+├── README.md                 # Main documentation
+├── requirements.txt          # Python dependencies
+├── LICENSE                   # Apache 2.0 License
+├── .gitignore                # Ignored files
 
-├── data/                  # Dataset information
-│   ├── README.md          # Dataset sources & instructions
-│   ├── processed/         # Optional preprocessed samples
-│   └── statistics.txt     # Dataset statistics
+├── data/                     # Dataset information
+│   ├── README.md             # Dataset sources & instructions
+│   ├── processed/            # Optional preprocessed samples
+│   └── statistics.txt        # Dataset statistics
 
-├── preprocessing/         # Data preprocessing scripts
+├── preprocessing/            # Data preprocessing scripts
 │   ├── preprocess.py
 │   ├── augmentation.py
 │   ├── extract_features.py
 │   └── README.md
 
-├── features/              # Feature extraction modules
+├── features/                 # Feature extraction modules
 │   ├── hand_landmarks.py
 │   ├── pose_estimation.py
 │   ├── facial_features.py
 │   ├── feature_utils.py
 │   └── README.md
 
-├── models/                # Model architecture
+├── models/                   # Model architecture
 │   ├── model.py
 │   ├── custom_layers.py
 │   ├── loss.py
 │   └── README.md
 
-├── training/              # Training pipeline
+├── training/                 # Training pipeline
 │   ├── train.py
 │   ├── config.yaml
 │   ├── callbacks.py
 │   ├── evaluate.py
 │   └── README.md
 
-├── inference/             # Inference & demo
+├── inference/                # Inference & demo
 │   ├── infer.py
 │   ├── realtime_demo.py
 │   ├── tts.py
 │   ├── utils.py
 │   └── README.md
 
-├── notebooks/             # Experiments & analysis
+├── notebooks/                # Experiments & analysis
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_model_experiments.ipynb
 │   ├── 03_results_visualization.ipynb
 │   └── README.md
 
-├── results/               # Performance results
+├── results/                  # Performance results
 │   ├── metrics.json
 │   ├── confusion_matrix.png
 │   ├── loss_curves.png
@@ -116,9 +114,8 @@ SIGN2SOUND_N3_Collectives/
 │   ├── training_log.txt
 │   └── sample_outputs/
 
-└── checkpoints/           # Trained model weights
+└── checkpoints/              # Trained model weights
     └── best_model.h5 / best_model.pth
-
 
 ---
 
