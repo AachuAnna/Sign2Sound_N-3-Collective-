@@ -224,7 +224,7 @@ Team Member 3 – Embedded Deployment & TTS Integration
 Demo Video with Explanation:  https://drive.google.com/file/d/1OCkZVKUHyec6vC-THRHv7V2qHljsEWga/view?usp=drivesdk
 
 
-Project Report:  
+Project Report:  https://drive.google.com/file/d/1s0MnmNTeWPK1FlU3cYF-niKtg1ZYTdvb/view?usp=drivesdk
 
 ---
 
