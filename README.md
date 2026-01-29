@@ -138,6 +138,130 @@ The trained model demonstrates reliable real-time gesture recognition.
 
 https://drive.google.com/file/d/1BwA3jR9bNNxmPlSy4YrFES1bZaymEi9Q/view?usp=sharing
 
+---
+
+## Installation and Setup
+
+### Prerequisites
+- Python 3.9 or higher
+- Arduino IDE
+- Arduino Nano 33 BLE Sense
+- Edge Impulse account
+
+### Python Environment Setup
+Install required Python dependencies:
+```bash
+pip install -r requirements.txt
+
+Arduino Setup
+
+Install Arduino Nano 33 BLE board support in Arduino IDE
+
+Install required Arduino libraries:
+
+Arduino_LSM9DS1
+
+Edge Impulse Arduino SDK (exported from Edge Impulse)
+
+Upload the inference sketch to the Arduino Nano 33 BLE Sense
+
+Running Gesture-to-Speech
+
+Connect the Arduino board via USB
+
+Run the text-to-speech inference script:
+
+python inference/tts.py
+
+
+The system listens to serial output from the Arduino and converts recognized gestures into audible speech on the laptop.
+
+Dataset Description
+
+The dataset consists of time-series IMU sensor data collected from the Arduino Nano 33 BLE Sense.
+
+Number of gesture classes: 13
+
+Sensors used:
+
+Accelerometer (X, Y, Z)
+
+Gyroscope (X, Y, Z)
+
+Data format: Sliding window time-series samples
+
+Labeling: Manual labeling during gesture collection
+
+The dataset is split into training and validation sets for model evaluation.
+
+Results and Performance
+
+The trained model demonstrates reliable real-time gesture recognition.
+
+Overall Accuracy: 86.4%
+
+Number of Gesture Classes: 13
+
+Dataset Split: 79% Training / 21% Validation
+
+Inference Type: Real-time edge inference
+
+Confusion Matrix
+
+The confusion matrix below illustrates the classification performance across all gesture classes.
+
+🔗 Confusion Matrix (View):
+https://drive.google.com/file/d/1BwA3jR9bNNxmPlSy4YrFES1bZaymEi9Q/view?usp=sharing
+
+Limitations
+
+Performance may vary across different users
+
+Limited gesture vocabulary
+
+Requires consistent gesture execution
+
+No visual (camera-based) context
+
+Environmental noise may affect IMU readings
+
+Future Work
+
+Expand gesture vocabulary
+
+Improve user-independent recognition
+
+Add multilingual text-to-speech support
+
+Deploy on wearable hardware
+
+Integrate with mobile or desktop applications
+
+Team
+
+Team Name: N³_Collectives
+
+Team Member 1 – Data Collection & Preprocessing
+
+Team Member 2 – Model Training & Evaluation
+
+Team Member 3 – Embedded Deployment & TTS Integration
+
+Project Links
+
+License
+
+This project is licensed under the Apache License 2.0.
+See the LICENSE file for more details.
+
+Acknowledgements
+
+Edge Impulse for embedded machine learning tools
+
+Arduino for hardware support
+
+Open-source Python libraries used in this project
+
 
 
 
