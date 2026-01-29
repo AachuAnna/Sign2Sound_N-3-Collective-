@@ -134,12 +134,7 @@ The trained model demonstrates reliable real-time gesture recognition.
 - Dataset Split: **79% Training / 21% Validation**
 
 
-## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/SIGN2SOUND_N^3-Collectives.git
-cd SIGN2SOUND_N^3_Collectives
 
 
 ### Confusion Matrix
