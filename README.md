@@ -44,7 +44,7 @@ The system is designed to work offline and can be deployed on edge devices.
 ## Technologies Used
 
 - Python  
-- Machine Learning (TensorFlow / PyTorch)  
+- Machine Learning (TensorFlow )  
 - Arduino Nano 33 BLE Sense  
 - Edge Impulse  
 - pyttsx3 (Text-to-Speech)  
