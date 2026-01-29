@@ -55,33 +55,93 @@ The system is designed to work offline and can be deployed on edge devices.
 > MediaPipe is **not used** in this project.
 
 ---
-
 ## Repository Structure
 
-SIGN2SOUND_N^3_Collectives/
-│
-├── README.md            # Main documentation
-├── requirements.txt     # Project dependencies
-├── LICENSE              # Apache 2.0 License
-├── .gitignore           # Ignored files
-│
-├── data/                # Dataset and statistics
-├── preprocessing/       # Data preprocessing scripts
-├── features/            # Feature extraction modules
-├── models/              # Model architecture
-├── training/            # Training pipeline
-├── inference/           # Inference and text-to-speech
-├── notebooks/           # Experiments and analysis
-├── results/             # Metrics and visualizations
-└── checkpoints/         # Trained model weights
+SIGN2SOUND_N3_Collectives/
+├── README.md              # Main documentation
+├── requirements.txt       # Python dependencies
+├── LICENSE                # Apache 2.0 License
+├── .gitignore             # Ignored files
+
+├── data/                  # Dataset information
+│   ├── README.md          # Dataset sources & instructions
+│   ├── processed/         # Optional preprocessed samples
+│   └── statistics.txt     # Dataset statistics
+
+├── preprocessing/         # Data preprocessing scripts
+│   ├── preprocess.py
+│   ├── augmentation.py
+│   ├── extract_features.py
+│   └── README.md
+
+├── features/              # Feature extraction modules
+│   ├── hand_landmarks.py
+│   ├── pose_estimation.py
+│   ├── facial_features.py
+│   ├── feature_utils.py
+│   └── README.md
+
+├── models/                # Model architecture
+│   ├── model.py
+│   ├── custom_layers.py
+│   ├── loss.py
+│   └── README.md
+
+├── training/              # Training pipeline
+│   ├── train.py
+│   ├── config.yaml
+│   ├── callbacks.py
+│   ├── evaluate.py
+│   └── README.md
+
+├── inference/             # Inference & demo
+│   ├── infer.py
+│   ├── realtime_demo.py
+│   ├── tts.py
+│   ├── utils.py
+│   └── README.md
+
+├── notebooks/             # Experiments & analysis
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_model_experiments.ipynb
+│   ├── 03_results_visualization.ipynb
+│   └── README.md
+
+├── results/               # Performance results
+│   ├── metrics.json
+│   ├── confusion_matrix.png
+│   ├── loss_curves.png
+│   ├── accuracy_curves.png
+│   ├── per_class_performance.csv
+│   ├── training_log.txt
+│   └── sample_outputs/
+
+└── checkpoints/           # Trained model weights
+    └── best_model.h5 / best_model.pth
 
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/SIGN2SOUND_N^2-Collectives.git
-cd SIGN2SOUND_N^2_Collectives
+git clone https://github.com/your-username/SIGN2SOUND_N^3-Collectives.git
+cd SIGN2SOUND_N^3_Collectives
+
+## Project Links
+
+- 🎥 **Demo Video with Explanation**: https://drive.google.com/file/d/1OCkZVKUHyec6vC-THRHv7V2qHljsEWga/view?usp=drivesdk
+- 📄 **Project Report**: https://drive.google.com/<your-report-link>
+
+## Results and Performance
+
+The trained model demonstrates reliable real-time gesture recognition.
+
+- Overall Accuracy: **86.4%**
+- Number of Gesture Classes: **13**
+- Dataset Split: **79% Training / 21% Validation**
+
+### Confusion Matrix
+
 
 
 
