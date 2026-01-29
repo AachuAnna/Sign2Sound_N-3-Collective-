@@ -54,58 +54,60 @@ The system is designed to work offline and can be deployed on edge devices.
 
 > MediaPipe is **not used** in this project.
 
----
+## Repository Structure
+
+```text
 SIGN2SOUND_N3_Collectives/
 ├── README.md                 # Main documentation
 ├── requirements.txt          # Python dependencies
 ├── LICENSE                   # Apache 2.0 License
 ├── .gitignore                # Ignored files
 
-├── data/                     # Dataset information
-│   ├── README.md             # Dataset sources & instructions
-│   ├── processed/            # Optional preprocessed samples
-│   └── statistics.txt        # Dataset statistics
+├── data/
+│   ├── README.md
+│   ├── processed/
+│   └── statistics.txt
 
-├── preprocessing/            # Data preprocessing scripts
+├── preprocessing/
 │   ├── preprocess.py
 │   ├── augmentation.py
 │   ├── extract_features.py
 │   └── README.md
 
-├── features/                 # Feature extraction modules
+├── features/
 │   ├── hand_landmarks.py
 │   ├── pose_estimation.py
 │   ├── facial_features.py
 │   ├── feature_utils.py
 │   └── README.md
 
-├── models/                   # Model architecture
+├── models/
 │   ├── model.py
 │   ├── custom_layers.py
 │   ├── loss.py
 │   └── README.md
 
-├── training/                 # Training pipeline
+├── training/
 │   ├── train.py
 │   ├── config.yaml
 │   ├── callbacks.py
 │   ├── evaluate.py
 │   └── README.md
 
-├── inference/                # Inference & demo
+├── inference/
 │   ├── infer.py
 │   ├── realtime_demo.py
 │   ├── tts.py
 │   ├── utils.py
 │   └── README.md
 
-├── notebooks/                # Experiments & analysis
+├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_model_experiments.ipynb
 │   ├── 03_results_visualization.ipynb
 │   └── README.md
 
-├── results/                  # Performance results
+├── results/
 │   ├── metrics.json
 │   ├── confusion_matrix.png
 │   ├── loss_curves.png
@@ -114,10 +116,10 @@ SIGN2SOUND_N3_Collectives/
 │   ├── training_log.txt
 │   └── sample_outputs/
 
-└── checkpoints/              # Trained model weights
+└── checkpoints/
     └── best_model.h5 / best_model.pth
+```
 
----
 
 ## Installation and Setup
 
