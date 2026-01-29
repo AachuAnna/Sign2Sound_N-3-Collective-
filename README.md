@@ -119,14 +119,7 @@ SIGN2SOUND_N3_Collectives/
 └── checkpoints/           # Trained model weights
     └── best_model.h5 / best_model.pth
 
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/SIGN2SOUND_N^3-Collectives.git
-cd SIGN2SOUND_N^3_Collectives
-
+    
 ## Project Links
 
 - 🎥 **Demo Video with Explanation**: https://drive.google.com/file/d/1OCkZVKUHyec6vC-THRHv7V2qHljsEWga/view?usp=drivesdk
@@ -139,6 +132,15 @@ The trained model demonstrates reliable real-time gesture recognition.
 - Overall Accuracy: **86.4%**
 - Number of Gesture Classes: **13**
 - Dataset Split: **79% Training / 21% Validation**
+
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/SIGN2SOUND_N^3-Collectives.git
+cd SIGN2SOUND_N^3_Collectives
+
 
 ### Confusion Matrix
 
