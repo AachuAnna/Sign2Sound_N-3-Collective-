@@ -40,6 +40,14 @@ The system is designed to work offline and can be deployed on edge devices.
 6. Text-to-speech output  
 
 ---
+## How It Works (Quick Flow)
+
+1. The user performs a predefined hand gesture.
+2. IMU sensors on the Arduino Nano 33 BLE Sense capture motion data.
+3. Sensor data is processed and classified using an Edge Impulse ML model.
+4. The predicted gesture label is sent to the laptop via Serial communication.
+5. The laptop converts the label into speech using a text-to-speech engine.
+
 
 ## Technologies Used
 
@@ -76,9 +84,6 @@ SIGN2SOUND_N3_Collectives/
 
 ├── features/
 │   ├── hand_landmarks.py
-│   ├── pose_estimation.py
-│   ├── facial_features.py
-│   ├── feature_utils.py
 │   └── README.md
 
 ├── models/
