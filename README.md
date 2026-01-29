@@ -134,10 +134,9 @@ The trained model demonstrates reliable real-time gesture recognition.
 - Dataset Split: **79% Training / 21% Validation**
 
 
-
-
-
 ### Confusion Matrix
+
+https://drive.google.com/file/d/1BwA3jR9bNNxmPlSy4YrFES1bZaymEi9Q/view?usp=sharing
 
 
 
