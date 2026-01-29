@@ -119,24 +119,6 @@ SIGN2SOUND_N3_Collectives/
 └── checkpoints/           # Trained model weights
     └── best_model.h5 / best_model.pth
 
-    
-## Project Links
-
-- 🎥 **Demo Video with Explanation**: https://drive.google.com/file/d/1OCkZVKUHyec6vC-THRHv7V2qHljsEWga/view?usp=drivesdk
-- 📄 **Project Report**: https://drive.google.com/<your-report-link>
-
-## Results and Performance
-
-The trained model demonstrates reliable real-time gesture recognition.
-
-- Overall Accuracy: **86.4%**
-- Number of Gesture Classes: **13**
-- Dataset Split: **79% Training / 21% Validation**
-
-
-### Confusion Matrix
-
-https://drive.google.com/file/d/1BwA3jR9bNNxmPlSy4YrFES1bZaymEi9Q/view?usp=sharing
 
 ---
 
@@ -148,121 +130,116 @@ https://drive.google.com/file/d/1BwA3jR9bNNxmPlSy4YrFES1bZaymEi9Q/view?usp=shari
 - Arduino Nano 33 BLE Sense
 - Edge Impulse account
 
-### Python Environment Setup
-Install required Python dependencies:
-```bash
-pip install -r requirements.txt
+  ## Arduino Setup
 
-Arduino Setup
+1. Install Arduino Nano 33 BLE board support in the Arduino IDE  
+2. Install required Arduino libraries:
+   - Arduino_LSM9DS1  
+   - Edge Impulse Arduino SDK (exported from Edge Impulse)  
+3. Upload the inference sketch to the Arduino Nano 33 BLE Sense  
 
-Install Arduino Nano 33 BLE board support in Arduino IDE
+---
 
-Install required Arduino libraries:
+## Running Gesture-to-Speech
 
-Arduino_LSM9DS1
-
-Edge Impulse Arduino SDK (exported from Edge Impulse)
-
-Upload the inference sketch to the Arduino Nano 33 BLE Sense
-
-Running Gesture-to-Speech
-
-Connect the Arduino board via USB
-
-Run the text-to-speech inference script:
+1. Connect the Arduino board to the laptop via USB  
+2. Run the text-to-speech inference script from the project directory:
 
 python inference/tts.py
 
-
 The system listens to serial output from the Arduino and converts recognized gestures into audible speech on the laptop.
 
-Dataset Description
+---
+
+## Dataset Description
 
 The dataset consists of time-series IMU sensor data collected from the Arduino Nano 33 BLE Sense.
 
-Number of gesture classes: 13
+Number of gesture classes: 13  
 
 Sensors used:
+- Accelerometer (X, Y, Z)  
+- Gyroscope (X, Y, Z)  
 
-Accelerometer (X, Y, Z)
+Data format:
+- Sliding window time-series samples  
 
-Gyroscope (X, Y, Z)
-
-Data format: Sliding window time-series samples
-
-Labeling: Manual labeling during gesture collection
+Labeling:
+- Manual labeling during gesture collection  
 
 The dataset is split into training and validation sets for model evaluation.
 
-Results and Performance
+---
+
+## Results and Performance
 
 The trained model demonstrates reliable real-time gesture recognition.
 
-Overall Accuracy: 86.4%
+Overall Accuracy: 86.4%  
+Number of Gesture Classes: 13  
+Dataset Split: 79% Training / 21% Validation  
+Inference Type: Real-time edge inference  
 
-Number of Gesture Classes: 13
+---
 
-Dataset Split: 79% Training / 21% Validation
-
-Inference Type: Real-time edge inference
-
-Confusion Matrix
-
+## Confusion Matrix
 The confusion matrix below illustrates the classification performance across all gesture classes.
 
-🔗 Confusion Matrix (View):
+Confusion Matrix (View):  
 https://drive.google.com/file/d/1BwA3jR9bNNxmPlSy4YrFES1bZaymEi9Q/view?usp=sharing
 
-Limitations
+---
 
-Performance may vary across different users
+## Limitations
 
-Limited gesture vocabulary
+- Performance may vary across different users  
+- Limited gesture vocabulary  
+- Requires consistent gesture execution  
+- No visual (camera-based) context  
+- Environmental noise may affect IMU readings  
 
-Requires consistent gesture execution
+---
 
-No visual (camera-based) context
+## Future Work
 
-Environmental noise may affect IMU readings
+- Expand gesture vocabulary  
+- Improve user-independent recognition  
+- Add multilingual text-to-speech support  
+- Deploy on wearable hardware  
+- Integrate with mobile or desktop applications  
 
-Future Work
+---
 
-Expand gesture vocabulary
+## Team
 
-Improve user-independent recognition
+Team Name: N³_Collectives  
 
-Add multilingual text-to-speech support
+Team Member 1 – Data Collection & Preprocessing  
+Team Member 2 – Model Training & Evaluation  
+Team Member 3 – Embedded Deployment & TTS Integration  
 
-Deploy on wearable hardware
+---
 
-Integrate with mobile or desktop applications
+## Project Links
 
-Team
+Demo Video with Explanation:  https://drive.google.com/file/d/1OCkZVKUHyec6vC-THRHv7V2qHljsEWga/view?usp=drivesdk
 
-Team Name: N³_Collectives
 
-Team Member 1 – Data Collection & Preprocessing
+Project Report:  
 
-Team Member 2 – Model Training & Evaluation
+---
 
-Team Member 3 – Embedded Deployment & TTS Integration
+## License
 
-Project Links
-
-License
-
-This project is licensed under the Apache License 2.0.
+This project is licensed under the Apache License 2.0.  
 See the LICENSE file for more details.
 
-Acknowledgements
+---
 
-Edge Impulse for embedded machine learning tools
+## Acknowledgements
 
-Arduino for hardware support
-
-Open-source Python libraries used in this project
-
-
-
+- Edge Impulse for embedded machine learning tools  
+- Arduino for hardware support  
+- Open-source Python libraries used in this project  
 
 
